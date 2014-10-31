@@ -1,10 +1,8 @@
-#KERNEL_PATH = /home/tujian/work/elite-project
-KERNEL_PATH = /home/tujian/zx/android_kernel_3.10
-#KERNEL_PATH = /home/tujian/zx/elite-project
+KERNEL_PATH ?= 
 CUR_DIR = $(shell pwd)
 
-ARCH = arm
-CROSS_COMPILE = arm-none-linux-gnueabi-
+ARCH ?= arm
+CROSS_COMPILE ?= arm-none-linux-gnueabi-
 
 export ARCH CROSS_COMPILE
 
@@ -12,7 +10,7 @@ CC = $(CROSS_COMPILE)gcc
 LD = $(CROSS_COMPILE)ld
 
 #only one file
-obj-m := uninterruptible_sleep.o
+obj-m := test_module.o
 
 #more than one file
 #obj-m := module_name.o
