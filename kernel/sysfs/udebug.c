@@ -16,9 +16,6 @@
  * Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/sysdev.h>
-#include <mach/comdef.h>
-#include <mach/map.h>
 #include <linux/errno.h>
 #include <linux/kernel.h>
 #include <linux/module.h>
